@@ -12,14 +12,10 @@ function App() {
     <Router>  
       <div>
         <Nav />
-
         <Routes>
-          <Route path="/project/:id" element={<ProjectPage />}>
-          </Route>
-          <Route path="/login" element={<LoginPage />}>
-          </Route>
-          <Route path="/" element={<HomePage />}>
-          </Route>
+          <Route path="/" element={<HomePage />}/>
+          <Route path="/project/:id" element={<ProjectPage />}/>
+          <Route path="/login" element={<LoginPage />}/>
         </Routes>
       </div>
     </Router>
