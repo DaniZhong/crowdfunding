@@ -15,11 +15,23 @@ function HomePage() {
     }, []);
 
     return (
-        <div id="project-list">
-        {projectList.map((projectData, key) => {
-        return <ProjectCard key={key} projectData={projectData}/>;
-        })}
+        
+        <div>
+            <h1>Welcome to Smile4all! </h1>
+            <h2>We are passionated to help community members who could not afford dental work they need,</h2>
+            <h2>to restore their smile because “smile is for all”!</h2>
+            <img
+            height={280} 
+            src="https://images.pexels.com/photos/1231230/pexels-photo-1231230.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="A group of people smiling together."
+            />
+            <div id="project-list">
+                {projectList.map((projectData, key) => {
+                return <ProjectCard key={key} projectData={projectData}/>;
+                 })}
+            </div>
         </div>
+        
     );
 }
 

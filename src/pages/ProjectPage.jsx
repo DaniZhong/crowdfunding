@@ -17,15 +17,22 @@ function ProjectPage() {
 
     return (
         <div>
+        <h1>Project details</h1>
         <h2>{projectData.title}</h2>
+        <img
+            height={400} 
+            src={projectData.image}
+        />
+        <h3>Our story:{projectData.description}</h3>
         <h3>Created at: {projectData.date_created}</h3>
         <h3>{`Status: ${projectData.is_open}`}</h3>
+        <h3>Our goal:{projectData.goal}</h3>
         <h3>Pledges:</h3>
         <ul>
         {projectData.pledges.map((pledgeData, key) => {
             return (
             <li>
-            ${pledgeData.amount} from {pledgeData.supporter}
+            ${pledgeData.amount} from {pledgeData.supporter}:{pledgeData.comment}
             </li>
             );
         })}
