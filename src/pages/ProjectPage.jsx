@@ -13,7 +13,7 @@ function ProjectPage() {
         .then((data) => {
         setProjectData(data);
         });
-    }, []);
+    }, [id]);
 
     return (
         <div>
@@ -22,6 +22,7 @@ function ProjectPage() {
         <img
             height={400} 
             src={projectData.image}
+            alt=""
         />
         <h3>Our story:{projectData.description}</h3>
         <h3>Created at: {projectData.date_created}</h3>

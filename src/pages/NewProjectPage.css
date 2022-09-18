@@ -1,0 +1,41 @@
+.NewProjectPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+    /* background: linear-gradient(
+    rgba(255,255,255,0.9),
+    rgba(255,255,255,0.1)
+    ),
+    url("https://images.pexels.com/photos/1231230/pexels-photo-1231230.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    );
+    background-size: cover;
+    background-position: center;     */
+}
+ 
+form{
+    background-color: #668EB9;
+    padding: 0px 60px;
+    border-radius: 10px;
+}
+
+h1{
+    color: #FFE2D2;;
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: #FF8800;
+    color: #FFE2D2;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor:pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}

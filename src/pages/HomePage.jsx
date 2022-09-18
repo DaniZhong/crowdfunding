@@ -22,7 +22,7 @@ function HomePage() {
             <h2>to restore their smile because “smile is for all”!</h2>
             <img
             height={280} 
-            src="https://images.pexels.com/photos/1231230/pexels-photo-1231230.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            src="https://dani-image-assets.s3.ap-southeast-2.amazonaws.com/crowdfunding/feature.jpg"
             alt="A group of people smiling together."
             />
             <div id="project-list">
