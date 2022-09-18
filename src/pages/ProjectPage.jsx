@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
 
 function ProjectPage() {
     const [projectData, setProjectData] = useState({pledges: [] });
     const { id } = useParams();
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate(`/pledge/${projectData.id}`);}
     
     useEffect(() => {
         fetch(`${process.env.REACT_APP_API_URL}projects/${id}`)
@@ -38,6 +43,7 @@ function ProjectPage() {
             );
         })}
         </ul>
+        <button type="submit" onClick={handleSubmit}>Make a pledge</button>
         </div>
     );
 }

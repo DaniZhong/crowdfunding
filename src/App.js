@@ -7,6 +7,8 @@ import ProjectPage from "./pages/ProjectPage";
 import LoginPage from "./pages/LoginPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import NewProjectPage from "./pages/NewProjectPage";
+import NewPledgePage from "./pages/NewPledgePage";
+
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/login" element={<LoginPage />}/>
           <Route path="/signup" element={<RegistrationPage />}/>
           <Route path="/createProject" element={<NewProjectPage />}/>
+          <Route path="/pledge/:id" element={<NewPledgePage />}/>
+          <Route path="/createPledge" element={<NewPledgePage />}/>
         </Routes>
       </div>
     </Router>
