@@ -1,19 +1,2 @@
-/* h1 {
-  color: #668EB9;
-  background-color: #B3C7DC;
-} */
 
-h2 {
-  color: #668EB9;
-  background-color: #B3C7DC;
-}
-
-#project-list {
-  color:#B3C7DC ;
-  background-color: #FFE2D2;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  column-gap: 10px;
-  row-gap: 10px;
-}
 

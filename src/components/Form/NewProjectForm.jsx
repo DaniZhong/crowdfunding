@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./NewProjectPage.css";
-import FormInput from "../components/FormInput/FormInput";
+import "./FormComponent.css";
+import FormInput from "../FormInput/FormInput";
 
 const token = window.localStorage.getItem("token");
-const NewProjectPage = () =>{
+const NewProjectForm = () =>{
     const[values,setValues]= useState({
         title: "",
         description: "",
@@ -114,7 +114,7 @@ const postData = async () => {
   
 
     return(
-        <div className="NewProjectPage">
+        <div className="FormComponent">
             <form onSubmit={handleSubmit}>
               <h1>Create a project!</h1>
            {    input.map((input)=>(
@@ -127,7 +127,7 @@ const postData = async () => {
 };
 
 
-export default NewProjectPage;
+export default NewProjectForm;
 
 
 

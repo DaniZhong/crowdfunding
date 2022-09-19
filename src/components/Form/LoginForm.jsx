@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./FormComponent.css";
+import "../FormInput/FormInput.css";
 
 function LoginForm() {
     const [credentials, setCredentials] = useState({
@@ -44,29 +46,34 @@ function LoginForm() {
     };
 
     return (
-    <form>
-    <div>
-    <label htmlFor="username">Username:</label>
-    <input
-        type="text"
-        id="username"
-        placeholder="Enter username"
-        onChange={handleChange}
-    />
-    </div>
-    <div>
-    <label htmlFor="password">Password:</label>
-    <input
-        type="password"
-        id="password"
-        placeholder="Password"
-        onChange={handleChange}
-    />
-    </div>
-    <button type="submit" onClick={handleSubmit}>
-    Login
-    </button>
+    <div className="FormComponent">
+        <form>
+        <h1>Login</h1>   
+        <div className="formInput">
+            <label htmlFor="username">Username:</label>
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+                onChange={handleChange}
+            />
+        </div>
+        <div className="formInput">
+            <label htmlFor="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                onChange={handleChange}
+            />
+        </div >
+            <button type="submit" onClick={handleSubmit}>
+                Login
+             </button>
     </form>
+
+    </div>    
+    
     );
 }
 

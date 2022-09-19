@@ -1,12 +1,12 @@
 import { useState } from "react";
-import "./NewPledgePage.css";
-import FormInput from "../components/FormInput/FormInput";
+import "./FormComponent.css";
+import FormInput from "../FormInput/FormInput";
 import { useParams } from "react-router-dom";
 
 const token = window.localStorage.getItem("token");
 
 
-const NewPledgePage = () =>{
+const NewPledgeForm = () =>{
     const { id } = useParams();
     console.log(id)
 
@@ -97,9 +97,9 @@ const postData = async () => {
   
 
     return(
-        <div className="NewPledgePage">
+        <div className="FormComponent">
             <form onSubmit={handleSubmit}>
-              <h1>Create a project!</h1>
+              <h1>Make a pledge!</h1>
            {    input.map((input)=>(
                 <FormInput key={input.id} {...input} value={values[input.name]} onChange= {onChange}/>
                 ))}
@@ -110,7 +110,7 @@ const postData = async () => {
 };
 
 
-export default NewPledgePage;
+export default NewPledgeForm;
 
 
 

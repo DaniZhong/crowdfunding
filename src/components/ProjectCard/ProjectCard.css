@@ -1,9 +1,13 @@
+
 .project-card {
     width: 100%;
-    color:#B3C7DC ;
-    background-color: #FFE2D2;
     border: 1px solid black;
     box-shadow: 0px 0px 5px gray;
+  }
+
+  .project-card h3 {
+    color:#668EB9;
+    font-size:large;
   }
   
   .project-card img {

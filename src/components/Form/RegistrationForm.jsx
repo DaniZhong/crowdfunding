@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./RegistrationPage.css";
-import FormInput from "../components/FormInput/FormInput";
+import "./FormComponent.css";
+import FormInput from "../FormInput/FormInput";
 
 
-const RegistrationPage = () =>{
+const RegistrationForm = () =>{
     const[values,setValues]= useState({
         username: "",
         first_name: "",
@@ -138,7 +138,7 @@ const postData = async () => {
     // console.log({values})
 
     return(
-        <div className="RegistrationPage">
+        <div className="FormComponent">
             <form onSubmit={handleSubmit}>
               <h1>Become a member!</h1>
            {    input.map((input)=>(
@@ -151,7 +151,7 @@ const postData = async () => {
 };
 
 
-export default RegistrationPage;
+export default RegistrationForm;
 
 
 
