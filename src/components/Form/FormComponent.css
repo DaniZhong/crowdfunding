@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     /* background: linear-gradient(
@@ -39,10 +39,10 @@ button{
     color: #FFE2D2;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     cursor:pointer;
     margin-top: 15px;
-    margin-bottom: 39px;
+    margin-bottom: 30px;
     min-width: 150px;
 }

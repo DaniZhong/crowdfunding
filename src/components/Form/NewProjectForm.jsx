@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./FormComponent.css";
 import FormInput from "../FormInput/FormInput";
 
 const token = window.localStorage.getItem("token");
+
 const NewProjectForm = () =>{
     const[values,setValues]= useState({
         title: "",
@@ -94,7 +96,7 @@ const postData = async () => {
       return response.json();
   }
 
- 
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
       e.preventDefault();
@@ -108,6 +110,7 @@ const postData = async () => {
         console.log(JSON.stringify({values})); 
       postData({values}).then((response) => {
       console.log(response);
+      navigate("/");
       });
       }
   };

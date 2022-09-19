@@ -30,17 +30,17 @@
     /* display: flex;
     justify-content: space-between;
     align-items: left; */
-    column-gap: 50px;
+    column-gap: 20px;
     justify-content: flex-end;
     flex-wrap: nowrap;
     flex-shrink: 0;
-    min-width: 100px;
+    min-width: 120px;
     display: flex;
     order: 3;
 }
 
 #navButton{
-    width:100px;
+    width:180px;
     background-color: #668EB9;
     color: #FFE2D2;
     /* color: #FF8800; */
