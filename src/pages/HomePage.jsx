@@ -21,7 +21,7 @@ function HomePage() {
             <div id="HomePage">
                 <div id="Message">
                     <p>Welcome to Smiles for All! </p>
-                    <p>Join the force to restore the smiles for our community members who could not afford the dental work they need! Because smiles are for all!</p>
+                    <p>Join the force to restore the smiles for our community members who could not afford the dental work they need. Because smiles are for all!</p>
                 </div>
                 {/* <div id="bar">
                     <p>Check in with the community! </p>

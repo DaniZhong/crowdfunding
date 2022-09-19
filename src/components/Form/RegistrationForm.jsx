@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./FormComponent.css";
 import FormInput from "../FormInput/FormInput";
+import { useNavigate } from "react-router-dom";
 
 
 const RegistrationForm = () =>{
@@ -74,7 +75,7 @@ const RegistrationForm = () =>{
           //   required: true,
           // }    
     ];
-
+    const navigate = useNavigate();
 const onChange = e=>{setValues({...values,[e.target.name]:e.target.value})}
 console.log({values})
 
@@ -108,6 +109,7 @@ const postData = async () => {
         console.log(JSON.stringify({values})); 
       postData({values}).then((response) => {
       console.log(response);
+      navigate("/login");
       });
       }
   };

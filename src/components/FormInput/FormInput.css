@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .formInput{
     display: flex;
     flex-direction: column;
     width: 380px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input{
@@ -15,10 +18,12 @@ label{
     font-size: 18px;
     color: #FFE2D2;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 span{
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
     padding: 3px;
     color: #FF8800;
     display: none;

@@ -8,6 +8,7 @@ import LoginForm from "./components/Form/LoginForm";
 import RegistrationForm from "./components/Form/RegistrationForm";
 import NewProjectForm from "./components/Form/NewProjectForm";
 import NewPledgeForm from "./components/Form/NewPledgeForm";
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/createProject" element={<NewProjectForm />}/>
           <Route path="/pledge/:id" element={<NewPledgeForm />}/>
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

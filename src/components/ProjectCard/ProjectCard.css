@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.project-card {
+  .project-card {
     width: 100%;
     border: 1px solid black;
     box-shadow: 0px 0px 5px gray;
@@ -8,6 +9,7 @@
   .project-card h3 {
     color:#668EB9;
     font-size:large;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .project-card img {
